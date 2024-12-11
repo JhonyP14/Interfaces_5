@@ -1,0 +1,31 @@
+<!-- Archivo index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Interactivo</title>
+
+    <!-- Vincular CSS -->
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+    <!-- Semáforo -->
+    <div class="semaforo">
+        <div id="red" class="light red"></div>
+        <div id="yellow" class="light yellow"></div>
+        <div id="green" class="light green"></div>
+    </div>
+
+    <!-- Botones -->
+    <div class="buttons">
+        <button class="red-btn" onclick="changeLight('red')">Rojo</button>
+        <button class="yellow-btn" onclick="changeLight('yellow')">Amarillo</button>
+        <button class="green-btn" onclick="changeLight('green')">Verde</button>
+    </div>
+
+    <!-- Vincular JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

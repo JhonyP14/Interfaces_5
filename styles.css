@@ -1,0 +1,207 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px;
+}
+
+.container {
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+.bibliografia {
+    margin-top: 20px; /* Espacio entre secciones */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Colores y fuentes */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2C3E50;
+    --background-color: #F9F9F9;
+    --text-color: #333;
+    --footer-bg: #34495E;
+    --footer-text: #FFF;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Estilo general */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el contenido en el centro */
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 2rem;
+    background: var(--primary-color);
+    color: white;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out; /* Añadimos transición */
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* Perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.perfil .foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    margin-right: 1.5rem;
+}
+
+.perfil .info h2 {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.perfil .info p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Botones en la sección del perfil */
+.info button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info button:hover {
+    background-color: #45a049;
+}
+
+/* Bibliografía */
+.bibliografia {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.bibliografia h3 {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.bibliografia ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bibliografia li {
+    margin-bottom: 0.5rem;
+}
+
+.bibliografia li a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.bibliografia li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    width: 100%;
+}
+
+.footer a {
+    color: var(--footer-text);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botones de las redes sociales en el header */
+.botones-header {
+    display: flex;
+}
+
+.btn-facebook,
+.btn-otro {
+    padding: 10px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #4267B2; /* Azul de Facebook */
+    transition: background-color 0.3s ease;
+}
+
+.btn-otro {
+    background-color: #28a745; /* Verde */
+}
+
+.btn-facebook:hover {
+    background-color: #365899;
+}
+
+.btn-otro:hover {
+    background-color: #218838;
+}
+
+.header.hidden {
+    transform: translateY(-100%); /* Mueve el encabezado fuera de la vista */
+}
+
+
